@@ -12,6 +12,17 @@ public class PrimeNumbersInRange {
 
 	public static void main(String[] args) {
 		// COMPLETA AQUÍ EL EJERCICIO
+		
+	        
+	        CalcPrimeNumbersThread cpnt = new CalcPrimeNumbersThread();
+	        cpnt.start();
+
+	        try {
+	        	cpnt.join();
+	        	
+	        }catch (InterruptedException e){
+	        	System.out.println("Thread interrumpido");
+	        }
 
 	}
 
